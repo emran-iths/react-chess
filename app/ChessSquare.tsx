@@ -27,3 +27,4 @@ class ChessSquare extends Component {
 }
 
 export default ChessSquare
+export { letters, numbers }
