@@ -5,8 +5,9 @@ import React, {
 import ChessBoard from './ChessBoard'
 import PropTypes from 'prop-types'
 
-function ChessGames() {
-    const [gamesIds, setGamesIds] = useState([])
+function ChessGames(props) {
+
+    const [gamesIds, setGamesIds] = useState(props.gamesIds);
     const [inputGameId, setInputGameId] = useState("");
 
     return < div >
