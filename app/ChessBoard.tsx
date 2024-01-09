@@ -99,7 +99,7 @@ class Inner extends Component {
                 h2 > {
                     this.props.gameId
                 } < /h2> <
-                table cellSpacing = "0" > {
+                table cellSpacing = "0" ><tbody> {
                     squares.map((a, i) => {
                         return < tr key = {i}> {
                             a.map((b, l) => {
@@ -114,7 +114,7 @@ class Inner extends Component {
                                 } > < /ChessSquare>   
                             })
                         } < /tr> } )
-                    } < /table></div > );
+                    } </tbody>< /table></div > );
 
                 }
 
