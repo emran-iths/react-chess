@@ -6,6 +6,7 @@ import ChessSquare, {
     numbers
 } from './ChessSquare'
 import PropTypes from 'prop-types'
+import ErrorBoundary from './ErrorBoundary'
 
 const squares = numbers.reverse().map((i, d) => {
     return letters.map((a, b) => {
@@ -51,7 +52,7 @@ const initial_state = {
 
 
 
-class ChessBoard extends Component {
+class Inner extends Component {
 
     constructor(props) {
         super(props);
@@ -114,6 +115,18 @@ class ChessBoard extends Component {
 
                 }
 
+}
+
+
+const ChessBoardError = (props) => {
+
+	return (
+		<div><b>Error:</b> {JSON.stringify(props)}</div>
+	)
+}
+
+const ChessBoard = (props) => {
+	return <ErrorBoundary errorUI={<ChessBoardError {...props}/>}><Inner {...props}/></ErrorBoundary>
 }
 
 
