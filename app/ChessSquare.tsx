@@ -14,7 +14,7 @@ class ChessSquare extends Component {
     }
 
     render() {
-        return < td class = {
+        return < td className = {
                 this.isLight() ? 'light' : 'dark'
             } >
             <
