@@ -33,6 +33,9 @@ function ChessGames(props) {
                         gameId = {
                             a
                         }
+
+			key = {i}
+
                         /> }) }   
 
                         <

@@ -101,11 +101,14 @@ class Inner extends Component {
                 } < /h2> <
                 table cellspacing = "0" > {
                     squares.map((a, i) => {
-                        return < tr > {
+                        return < tr key = {i}> {
                             a.map((b, l) => {
                                 return < ChessSquare piece = {
                                     sp[b]
                                 }
+
+				key = { i + "," + l}
+
                                 name = {
                                     b
                                 } > < /ChessSquare>   
