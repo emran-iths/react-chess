@@ -19,8 +19,8 @@ import ChessGames from './ChessGames'
 */
 
 // TEST APP to test game stream
-class App extends Component {
-  constructor(props) {
+class App extends Component<{}, { log: Array<String> }> {
+  constructor(props : any) {
     super(props);
     this.state = {
       log: []
