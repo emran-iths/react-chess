@@ -1,3 +1,4 @@
+/*
 import ChessPiece from './ChessPiece'
 import React, {
     Component
@@ -28,3 +29,4 @@ class ChessSquare extends Component {
 
 export default ChessSquare
 export { letters, numbers }
+*/

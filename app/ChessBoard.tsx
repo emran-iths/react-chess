@@ -1,3 +1,4 @@
+/*
 import React, {
     Component
 } from 'react'
@@ -57,9 +58,6 @@ class Inner extends Component {
     constructor(props) {
         super(props);
 
-        /* stream NOT IMPLEMENTED YET
-        let self = this;
-        stream(this.props.gameId, function(data){self.props.moves = data['state']['moves'];})*/
     }
 
     getMoves() {
@@ -134,3 +132,5 @@ const ChessBoard = (props) => {
 
 
 export default ChessBoard;
+
+*/

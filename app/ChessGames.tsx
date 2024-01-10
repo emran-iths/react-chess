@@ -1,3 +1,4 @@
+/*
 import React, {
     Component,
     useState
@@ -43,3 +44,5 @@ function ChessGames(props) {
 }
 
 export default ChessGames;
+
+*/

@@ -1,3 +1,4 @@
+/*
 import Image from 'next/image'
 import React, {
     Component
@@ -40,4 +41,4 @@ class ChessPiece extends Component {
 
 
 export default ChessPiece
-
+*/
