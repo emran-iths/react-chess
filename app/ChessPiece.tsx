@@ -1,13 +1,10 @@
-/*
 import Image from 'next/image'
 import React, {
     Component
 } from 'react'
-class ChessPiece extends Component {
 
-    render() {
 
-        let img_src = {
+let img_src_dict: { [id: string]: string } = {
             "w-knight": "Chess_nlt45",
             "b-knight": "Chess_ndt45",
             "w-pawn": "Chess_plt45",
@@ -20,7 +17,14 @@ class ChessPiece extends Component {
             "b-bishop": "Chess_bdt45",
             "w-rook": "Chess_rlt45",
             "b-rook": "Chess_rdt45",
-        } [this.props.type]
+        }
+
+
+class ChessPiece extends Component<{ type: string}> {
+
+    render() {
+
+        let img_src = img_src_dict[this.props.type]
         if (img_src === undefined)
             img_src = 'No_image';
 
@@ -41,4 +45,3 @@ class ChessPiece extends Component {
 
 
 export default ChessPiece
-*/
