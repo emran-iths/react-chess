@@ -1,4 +1,3 @@
-/*
 import ChessPiece from './ChessPiece'
 import React, {
     Component
@@ -7,7 +6,7 @@ import React, {
 let letters = ["a", "b", "c", "d", "e", "f", "g", "h"];
 let numbers = ["1", "2", "3", "4", "5", "6", "7", "8"];
 
-class ChessSquare extends Component {
+class ChessSquare extends Component<{ name: string, piece: string }> {
 
     isLight() {
         return ((letters.indexOf(this.props.name[0]) % 2) +
@@ -29,4 +28,4 @@ class ChessSquare extends Component {
 
 export default ChessSquare
 export { letters, numbers }
-*/
+

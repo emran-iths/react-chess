@@ -7,9 +7,9 @@ import React, {
 import gameStream from './GameStream'
 
 import ChessPiece from './ChessPiece'
+import ChessSquare from './ChessSquare'
 /*
 import Image from 'next/image'
-import ChessSquare from './ChessSquare'
 import ChessBoard from './ChessBoard'
 import ChessGames from './ChessGames'
 */
