@@ -1,21 +1,18 @@
-/*
 import React from 'react'
 
 
-class ErrorBoundary extends React.Component {
-        constructor(props) {
+class ErrorBoundary extends React.Component<any,{ hasError: boolean }> {
+        constructor(props : any) {
             super(props);
-            this.state = {
-                hasError: false
-            };
+            this.state = { hasError: false};
         }
 
-        static getDerivedStateFromError(error) {
+        static getDerivedStateFromError(error : any) {
             return {
                 hasError: true
             };
         }
-        componentDidCatch(error, errorInfo) {
+        componentDidCatch(error : any, errorInfo: any) {
             console.log(error, errorInfo);
         }
         render() {
@@ -23,7 +20,8 @@ class ErrorBoundary extends React.Component {
                 if (this.props.errorUI) {
                     return this.props.errorUI
                 }
-                return < h1 > Something went wrong. < /h1>;    }
+                return <h1> Something went wrong. </h1>;
+	     }
                 return this.props.children;
             }
         }
@@ -31,4 +29,3 @@ class ErrorBoundary extends React.Component {
 
 
         export default ErrorBoundary
-*/
